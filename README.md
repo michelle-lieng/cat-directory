@@ -1,12 +1,39 @@
-# React + Vite
+# 🐱 Cat Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a basic React project I created by following the [Scrimba React tutorial](https://www.youtube.com/watch?v=x4rFhThSX04). It displays a directory of adorable cats with their contact details.
 
-Currently, two official plugins are available:
+## 🛠 My Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Cat Directory Screenshot](./public/catdemo.png)
 
-## Expanding the ESLint configuration
+## 🛠️ What I Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+While building this project, I learned about:
+
+- **React Components** – Structuring the UI into smaller, reusable components.
+- **JSX** – Using JavaScript inside HTML-like syntax to render dynamic content.
+- **Props** – Passing data (like cat names, images, phone numbers, and emails) into components using props.
+
+Each cat profile is represented using a `ContactCard` component, and the following props are passed to it:
+
+```js
+<ContactCard
+  img="cat-image-url.jpg"
+  name="Mr. Whiskers"
+  phone="0436 273 283"
+  email="mrwhiskers@gmail.com"
+/>
+```
+
+This project helped me understand the foundational building blocks of React and how to reuse a component with different content by changing its props.
+
+## 🛠 How to Run Locally
+
+1. Clone the repo
+2. Navigate into the folder
+3. Install dependencies
+   `npm install`
+4. Start the dev server
+   `npm run dev`
+
+> This project uses [Vite](https://vitejs.dev/) for fast setup and hot reloading.
